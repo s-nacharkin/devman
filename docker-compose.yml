@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  devmanweb:
+    build: .
+    command: python main.py
+    volumes:
+      - ./django-orm-watching-storage:/django-orm-watching-storage
+    ports:
+      - 8000:8000
